@@ -1,0 +1,16 @@
+voltage = float(input("Enter voltage (V): "))
+resistance = float(input("Enter resistance (R): "))
+
+# Calculate current using Ohm's Law
+current = voltage / resistance
+
+# Display the current
+print(f"Current (I) = {current:.2f} A")
+
+# Determine the nature of current
+if current < 0.5:
+    print("Low current")
+elif 0.5 <= current <= 2:
+    print("Normal current")
+else:
+    print("High current")
